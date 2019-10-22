@@ -336,6 +336,10 @@ body {
   display: flex;
 }
 
+.fetured__item:hover {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
 .fetured__link {
   text-decoration: none;
   color: #222;
@@ -499,4 +503,148 @@ body {
   line-height: 24px;
   letter-spacing: 0.35px;
   color: #fbfbfb;
+}
+
+.wrapper {
+  display: flex;
+  height: 438px;
+  padding: 0 calc(50% - 570px);
+  margin-bottom: 100px;
+
+  background-color: #f9f9f9;
+  background-image: url('../img/wrapper-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.review {
+  position: relative;
+
+  width: 569px;
+  padding-top: 120px;
+  padding-left: 114px;
+  border-right: 1px solid #fff;
+}
+
+.review__avatar {
+  position: absolute;
+  left: 0;
+
+  border-radius: 50%;
+}
+
+.review__text {
+  width: 386px;
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 26px;
+  letter-spacing: 0.4px;
+  color: #222224;
+}
+
+.review__author {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  font-style: normal;
+  color: #f16d7f;
+}
+
+.review__author--small {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #222224;
+}
+
+.review__btn-list {
+  display: flex;
+  padding-left: 0;
+  margin-top: 25px;
+
+  list-style: none;
+}
+
+.review__btn {
+  width: 38px;
+  height: 4px;
+  margin-right: 13px;
+
+  background-color: #d6d6d6;
+  border: none;
+  cursor: pointer;
+}
+
+[aria-current="comment"] {
+  background-color: #f16d7f;
+}
+
+.subscribe {
+  width: 570px;
+  padding-top: 120px;
+  padding-left: 92px;
+}
+
+.subscribe__hgroup {
+  width: max-content;
+  margin-bottom: 35px;
+  margin-left: 54px;
+
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.subscribe__heading {
+  margin-bottom: 10px;
+
+  font-size: 24px;
+  letter-spacing: 0.6px;
+}
+
+.subscribe__text {
+  margin: 0;
+
+  font-size: 14px;
+  letter-spacing: 0.35px;
+}
+
+.subscribe__form {
+  display: flex;
+}
+
+.subscribe__input {
+  width: 282px;
+  height: 46px;
+  padding-left: 28px;
+  padding-right: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  color: #222224;
+
+  border: none;
+  border-radius: 23px 0 0 23px;
+  background-color: #e1e1e1;
+}
+
+.subscribe__btn {
+  width: 104px;
+  height: 46px;
+
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  color: #fff;
+
+  border: none;
+  border-radius: 0 23px 23px 0;
+  background-color: #f16d7f;
+  cursor: pointer;
 }
