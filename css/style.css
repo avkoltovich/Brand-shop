@@ -57,6 +57,7 @@ body {
   border: 1px solid #e6e6e6;
   background-color: #cdcdcc;
   background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+  cursor: pointer;
 }
 
 .header__submenu {
@@ -88,6 +89,7 @@ body {
   border-radius: 0 3px 3px 0;
   border: 1px solid #e6e6e6;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .header__user-nav {
@@ -104,6 +106,7 @@ body {
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .user-nav__link {
@@ -218,6 +221,7 @@ body {
 
 .promo {
   padding: 0 calc(50% - 570px);
+  margin-bottom: 90px;
 }
 
 .promo__list {
@@ -274,4 +278,225 @@ body {
   position: absolute;
   top: 0;
   z-index: -1;
+}
+
+.fetured {
+  padding: 0 calc(50% - 570px);
+  margin-bottom: 100px;
+}
+
+.fetured__heading {
+  margin-bottom: 8px;
+
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  text-align: center;
+  color: #222;
+}
+
+.fetured__text {
+  margin-top: 0;
+  margin-bottom: 60px;
+
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  text-align: center;
+  color: #9f9f9f;
+}
+
+.fetured__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+
+  list-style: none;
+}
+
+.fetured__item {
+  position: relative;
+
+  width: 261px;
+  min-height: 364px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.fetured__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.fetured__img {
+  width: 261px;
+  height: 280px;
+}
+
+.fetured__item:hover .fetured__hover-area {
+  display: flex;
+}
+
+.fetured__link {
+  text-decoration: none;
+  color: #222;
+}
+
+.fetured__title {
+  padding-left: 14px;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fetured__price {
+  padding-left: 14px;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+
+.fetured__hover-area {
+  position: absolute;
+  top: 0;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 261px;
+  height: 280px;
+
+  background-color: rgba(58, 56, 56, 0.83)
+}
+
+.fetured__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 123px;
+  height: 39px;
+  padding: 0 10px;
+
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.fetured__link--btn {
+  display: block;
+  width: 212px;
+  height: 48px;
+  margin: 0 auto;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+
+  background-color: #f16d7f;
+}
+
+.offer {
+  display: flex;
+  width: 1140px;
+  height: 529px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+
+  background-color: #222224;
+  background-image: url('../img/offer-bg.jpg');
+  background-repeat: no-repeat;
+}
+
+.offer__heading {
+  margin-top: 146px;
+  margin-left: 40px;
+
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+.offer__heading--pink {
+  color: #f16d7f;
+}
+
+.offer__heading--small {
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.9px;
+}
+
+.offer__list {
+  width: 260px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-top: 55px;
+  padding-left: 0;
+
+
+  list-style: none;
+}
+
+.offer__item {
+  position: relative;
+}
+
+.offer__item::before {
+  position: absolute;
+  left: -75px;
+
+  width: 47px;
+  height: 40px;
+  content: "";
+
+  background-repeat: no-repeat;
+}
+
+.offer__item:nth-child(1)::before {
+  background-image: url('../img/truck.svg');
+}
+
+.offer__item:nth-child(2)::before {
+  background-image: url('../img/sale.svg');
+}
+
+.offer__item:nth-child(3)::before {
+  background-image: url('../img/crown.svg');
+}
+
+.offer__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fbfbfb;
+}
+
+.offer__text {
+  width: 220px;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  color: #fbfbfb;
 }
