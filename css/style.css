@@ -239,13 +239,21 @@ body {
 
   width: 560px;
   height: 261px;
-  margin: 10px;
+  margin: 0;
 }
 
-.promo__item:first-child,
+.promo__item:first-child {
+  height: 542px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 .promo__item:last-child {
   height: 542px;
+  margin-top: 20px;
 }
+
+
 
 .promo__link {
   display: block;
@@ -647,4 +655,8 @@ body {
   border-radius: 0 23px 23px 0;
   background-color: #f16d7f;
   cursor: pointer;
+}
+
+.footer {
+  
 }
